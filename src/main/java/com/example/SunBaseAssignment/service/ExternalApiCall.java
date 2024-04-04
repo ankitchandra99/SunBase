@@ -64,6 +64,7 @@ public class ExternalApiCall {
         //using restTemplate and httpheader to consume external api
         RestTemplate restTemplate = new RestTemplate();
 
+
          HttpHeaders headers = new HttpHeaders();
 
         //setting content type for header
