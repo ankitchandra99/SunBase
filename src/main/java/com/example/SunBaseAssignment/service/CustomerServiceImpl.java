@@ -1,4 +1,4 @@
-package com.example.SunBaseAssignment.service.sericeImp;
+package com.example.SunBaseAssignment.service;
 
 import com.example.SunBaseAssignment.Dto.Request.CustomerRequestDto;
 import com.example.SunBaseAssignment.Dto.Response.CustomerResponseDto;
@@ -7,7 +7,6 @@ import com.example.SunBaseAssignment.Exceptions.CustomerNotFound;
 import com.example.SunBaseAssignment.Transformer.CustomerTransformer;
 import com.example.SunBaseAssignment.models.Customer;
 import com.example.SunBaseAssignment.repository.CustomerRepository;
-import com.example.SunBaseAssignment.service.customerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -18,16 +17,15 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 @Service
-public class CustomerServiceImpl implements customerService {
+public class CustomerServiceImpl  {
 
     @Autowired
     CustomerRepository customerRepository;
 
     //create customer logic and storing them in db
-    @Override
+
     public CustomerResponseDto createCustomer(CustomerRequestDto customerRequestDto,  boolean SyncDb) {
 
 
@@ -58,7 +56,7 @@ public class CustomerServiceImpl implements customerService {
 
 
 
-    @Override
+
     public CustomerResponseDto udapteCustomer(String email, CustomerRequestDto customerRequestDto) {
 
         //first checking if customer is present or not in db by given email ID
@@ -105,7 +103,6 @@ public class CustomerServiceImpl implements customerService {
 
     }
 
-    @Override
     public CustomerResponseDto getCustomerWithId(String email) {
 
         //first checking if customer is present or not in db by given email ID
@@ -121,7 +118,7 @@ public class CustomerServiceImpl implements customerService {
         return customerResponseDto;
     }
 
-    @Override
+
     public List<CustomerResponseDto> searchBySpecificType(String searchBy, String searchQuery) {
         List<Customer> searchRes = new ArrayList<>();
 
@@ -144,7 +141,7 @@ public class CustomerServiceImpl implements customerService {
     }
 
     //pagination logic
-    @Override
+
     public Page<CustomerResponseDto> getAllCustomers(int pageNo, int rowsCount, String sortBy, String searchBy) {
 
 
@@ -167,8 +164,6 @@ public class CustomerServiceImpl implements customerService {
         return CustomerTransformer.customerToCustomerResponseDto(customer);
     }
 
-    @Override
-    @Transactional
     public String deleteCustomer(String email) {
         //getting customer from that email id
         Customer customer = customerRepository.findByEmail(email);

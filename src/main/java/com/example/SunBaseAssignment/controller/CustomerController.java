@@ -4,9 +4,9 @@ import com.example.SunBaseAssignment.Dto.Request.CustomerRequestDto;
 import com.example.SunBaseAssignment.Dto.Response.CustomerResponseDto;
 import com.example.SunBaseAssignment.Exceptions.CustomerAlreadyExits;
 import com.example.SunBaseAssignment.Exceptions.CustomerNotFound;
+import com.example.SunBaseAssignment.service.CustomerServiceImpl;
 import com.example.SunBaseAssignment.service.ExternalApiCall;
-import com.example.SunBaseAssignment.service.customerService;
-import com.example.SunBaseAssignment.service.sericeImp.CustomerServiceImpl;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
@@ -21,7 +21,7 @@ import java.util.List;
 public class CustomerController {
 
     @Autowired
-    customerService customerService  ;
+    CustomerServiceImpl customerService  ;
 
 
     ExternalApiCall externalApiCall = new ExternalApiCall();
@@ -74,6 +74,7 @@ public class CustomerController {
         return new ResponseEntity<>(searchedResult,HttpStatus.FOUND);
     }
 
+    @Transactional
     @DeleteMapping("/delete")
     public ResponseEntity deleteCustomer(@RequestParam String email){
           try{
