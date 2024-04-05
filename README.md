@@ -1,10 +1,11 @@
 ## Technologies Used:
 
-Backend: Java Spring Boot
-Frontend: HTML, CSS, JavaScript
-Database: MySQL
-Security: Spring Security with JWT authentication
-Getting Started
+1.Backend: Java Spring Boot.
+2.Frontend: HTML, CSS, JavaScript.
+3.Database: MySQL.
+4.Security: Spring Security with JWT authentication
+  Getting Started.
+
 To run the application locally, follow these steps:
 
 ## Setup Instructions:
@@ -24,8 +25,8 @@ To run the application locally, follow these steps:
     spring.jpa.hibernate.ddl-auto=update
 
 4.Log in with the following credentials:
-  Username: ankit
-  Password: chandra
+  .Username:ankit
+  .Password:chandra
 
   Page
   ![Screenshot 2024-04-05 081013](https://github.com/ankitchandra99/SunBase/assets/126271360/2f6b4f14-c726-4d3e-9683-995867b1a7a6)
@@ -37,7 +38,8 @@ To run the application locally, follow these steps:
   ![Screenshot 2024-04-05 081241](https://github.com/ankitchandra99/SunBase/assets/126271360/6b961bd5-470d-490c-b1cf-31db552f6983)
 
 
-  ![Screenshot 2024-04-05 081121](https://github.com/ankitchandra99/SunBase/assets/126271360/ce604944-d35a-469c-a024-28b40dbf3e40)
+![Screenshot 2024-04-05 081304](https://github.com/ankitchandra99/SunBase/assets/126271360/3e5ed305-d3d9-4aa5-851c-01d3222e18ce)
+
 
 
 
