@@ -31,9 +31,9 @@ To run the application locally, follow these steps:
 
 4.Log in with the following credentials:
   
-  .Username:ankit
+   # Username:ankit
   
-  .Password:chandra
+   # Password:chandra
 
   Page
   ![Screenshot 2024-04-05 081013](https://github.com/ankitchandra99/SunBase/assets/126271360/2f6b4f14-c726-4d3e-9683-995867b1a7a6)
