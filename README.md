@@ -1,11 +1,11 @@
 ## Technologies Used:
 
-Backend: Java Spring Boot
-Frontend: HTML, CSS, JavaScript
-Database: MySQL
-Security: Spring Security with JWT authentication
-Getting Started
-To run the application locally, follow these steps:
+# Backend: Java Spring Boot
+# Frontend: HTML, CSS, JavaScript
+# Database: MySQL
+# Security: Spring Security with JWT authentication
+# Getting Started
+# To run the application locally, follow these steps:
 
 ## Setup Instructions:
 
