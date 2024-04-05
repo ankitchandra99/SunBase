@@ -14,8 +14,10 @@ To run the application locally, follow these steps:
 ## Setup Instructions:
 
 1.Clone this repository to your local machine.
+
 2.Navigate to the frontend directory and open the index.html file in your web browser to access 
   the login page.
+
 3.Configure Application Properties:
     I am using MySQL database,so you have to create a database with name "ecommerce".
      
@@ -81,28 +83,37 @@ This controller manages customer-related operations.
 ## POST /customer/create
 
 Description: Creates a new customer.
+
 Request Body: Customer details
+
 Request Parameters: SyncDb (boolean)
-PUT /customer/update/{email}
+
+## PUT /customer/update/{email}
 
 Description: Updates an existing customer.
+
 Path Variable: Customer's email
+
 Request Body: Updated customer details
 
 ## GET /customer/getCustomers
 Description: Retrieves a list of customers.
+
 Request Parameters: Pagination details, sorting, and search criteria
 
 ## GET /customer/get/{email}
 Description: Retrieves a customer by email.
+
 Path Variable: Customer's email
 
 ## GET /customer/searchBy
 Description: Searches for customers based on specific criteria.
+
 Request Parameters: Search criteria
 
 ## DELETE /customer/delete
 Description: Deletes a customer.
+
 Request Parameter: Customer's email
 
 ## GET /customer/sync
