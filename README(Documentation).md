@@ -19,7 +19,7 @@ To run the application locally, follow these steps:
   the login page.
 
 3.Configure Application Properties:
-    I am using MySQL database,so you have to create a database with name "ecommerce".
+    I am using MySQL database,so you have to create a database with name "customerdetails".
      
     We have to add database username and password in application.properties file.
     
