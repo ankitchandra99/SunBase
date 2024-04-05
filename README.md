@@ -1,10 +1,13 @@
 ## Technologies Used:
 
-1.Backend: Java Spring Boot.
-2.Frontend: HTML, CSS, JavaScript.
-3.Database: MySQL.
+1.Backend: Java Spring Boot :
+
+2.Frontend: HTML, CSS, JavaScript:
+
+3.Database: MySQL:
+
 4.Security: Spring Security with JWT authentication
-  Getting Started.
+  Getting Started:
 
 To run the application locally, follow these steps:
 
@@ -41,6 +44,7 @@ To run the application locally, follow these steps:
 ![Screenshot 2024-04-05 081304](https://github.com/ankitchandra99/SunBase/assets/126271360/3e5ed305-d3d9-4aa5-851c-01d3222e18ce)
 
 
+![Screenshot 2024-04-05 082434](https://github.com/ankitchandra99/SunBase/assets/126271360/94855821-5528-4514-a3f7-39a42d185047)
 
 
 
@@ -48,3 +52,58 @@ To run the application locally, follow these steps:
 User Authentication: Users can log in using their credentials.
 User Management: Admin users can add, update, and delete user information.
 Search Functionality: Users can search for other users based on different criteria such as city, phone, first name, or email.
+
+## Endpoints:
+AuthController
+This controller handles user authentication.
+
+
+## POST /auth/login
+
+Description: Allows users to log in and generates a JWT token upon successful authentication.
+
+Request Body:
+email: User's email
+password: User's password
+
+Response Body:
+jwtToken: JWT token for authentication
+username: User's username
+
+Exception Handlers:
+ExceptionHandler
+Description: Handles errors during authentication.
+Response Body: "Credentials Invalid !!"
+CustomerController
+This controller manages customer-related operations.
+
+
+## POST /customer/create
+
+Description: Creates a new customer.
+Request Body: Customer details
+Request Parameters: SyncDb (boolean)
+PUT /customer/update/{email}
+
+Description: Updates an existing customer.
+Path Variable: Customer's email
+Request Body: Updated customer details
+
+## GET /customer/getCustomers
+Description: Retrieves a list of customers.
+Request Parameters: Pagination details, sorting, and search criteria
+
+## GET /customer/get/{email}
+Description: Retrieves a customer by email.
+Path Variable: Customer's email
+
+## GET /customer/searchBy
+Description: Searches for customers based on specific criteria.
+Request Parameters: Search criteria
+
+## DELETE /customer/delete
+Description: Deletes a customer.
+Request Parameter: Customer's email
+
+## GET /customer/sync
+Description: Retrieves customer data from an external API.
