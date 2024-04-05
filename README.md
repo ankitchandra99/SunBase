@@ -49,6 +49,10 @@ To run the application locally, follow these steps:
 ![Screenshot 2024-04-05 082434](https://github.com/ankitchandra99/SunBase/assets/126271360/94855821-5528-4514-a3f7-39a42d185047)
 
 
+![image](https://github.com/ankitchandra99/SunBase/assets/126271360/a3e5d099-566c-4cfd-8820-3c530bc5d83c)
+
+
+
 
 ## Features
 User Authentication: Users can log in using their credentials.
