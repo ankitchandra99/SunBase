@@ -30,7 +30,9 @@ To run the application locally, follow these steps:
     spring.jpa.hibernate.ddl-auto=update
 
 4.Log in with the following credentials:
+  
   .Username:ankit
+  
   .Password:chandra
 
   Page
